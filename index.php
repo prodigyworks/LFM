@@ -7,6 +7,12 @@
 		header("location: imageslider.php");
 		
 	} else {
-		header("location: users.php");
+		if (isUserInRole("ADMIN")) {
+			header("location: users.php");
+			
+		} else {
+			session_unset();
+			header("location: system-login.php");
+		}
 	}
 ?>

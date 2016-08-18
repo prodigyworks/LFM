@@ -124,7 +124,7 @@
 		}
 		
 		sendRoleMessage("ADMIN", "User Registration", "User " . $login . " has been registered as a user.<br>Password : " . $_POST['password']);
-		sendUserMessage($memberid, "User Registration", "<h3>Welcome $fname $lname.</h3><br>You have been invited to become a member of '{$_SESSION['COMPANY_NAME']}'.<br>Please click on the <a href='" . getSiteConfigData()->domainurl . "/index.php'>link</a> to activate your account.<br><br><h4>Login details</h4>User ID : $login<br>Password : " . $_POST['password']);
+		sendUserMessage($memberid, "User Registration", "<h3>Welcome $fname $lname.</h3><br>Your portfolio of images has now been set up on the London Fashion Models App. To gain access please download the LFM App from iTunes or Google Play, then click the Login tab and sign in using the username and password below.<br><br><h4>Login details</h4>User ID : $login<br>Password : " . $_POST['password']);
 		
 		if($result) {
 			header("location: system-register-success.php");

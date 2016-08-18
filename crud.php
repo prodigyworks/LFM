@@ -1887,6 +1887,7 @@ class Crud  {
 							autoOpen: false,
 							show:"fade",
 							hide:"fade",
+							width: 500,
 							title:"Save Filter",
 							open: function(event, ui){
 								
